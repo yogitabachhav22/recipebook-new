@@ -3,7 +3,7 @@
 const express = require("express");
 const router = express.Router();
 const Recipe = require("../models/Recipe");
-const auth = require("../middleware/Auth");
+const auth = require("../middleware/auth");
 
 // PUBLIC – get all recipes
 router.get("/", async (req, res) => {
