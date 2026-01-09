@@ -1,0 +1,395 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Indian Chicken Fry ",
+      "ingredients": "Chicken,Tamato sause,olive oil,salt and pepper,chicken",
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/31.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ],
+      "cuisine": "Asian Authentic"
+    },
+    {
+      "id": "2",
+      "name": "Cookies",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/22.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Paneer slice",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/3.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Maxican chicken",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/5.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Italian Pizza",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/10.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Egg pulao",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/21.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Italian Pizza",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/5.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Italian Pizza",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/6.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Italian Pizza",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/7.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Vegetable mix",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/9.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "10",
+      "name": "paneer tikka masala",
+      "ingredients": [
+        "paneer, salt, pepper, red chilli ginger garlic paste"
+      ],
+      "userId": 6,
+      "image": "https://cdn.dummyjson.com/recipe-images/8.webp",
+      "tags": [
+        "Tikka masala",
+        "Paneer"
+      ],
+      "instructions": "add oil add salt add add spices add paneer cubes",
+      "cuisine": "Asian Authentic"
+    },
+    {
+      "id": "5dc3"
+    },
+    {
+      "id": "1",
+      "name": "Italian Pizza",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/31.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Cookies",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/22.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Cookies",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/22.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Pizza zesgt",
+      "ingredients": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper",
+        "chicken"
+      ],
+      "instructions": [
+        "Pizza dough",
+        "Tamato sause",
+        "olive oil",
+        "salt and pepper"
+      ],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/31.webp",
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "rating": 2,
+      "meal": [
+        ""
+      ]
+    }
+  ]
+}

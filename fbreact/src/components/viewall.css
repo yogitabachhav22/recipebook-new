@@ -1,0 +1,92 @@
+/* #container-fluid {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+} */
+
+
+/* 
+.add-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.add-card {
+  width: 60%;
+  border-radius: 15px !important;
+  background: #ffffff;
+  border: none;
+}
+
+.add-card h2 {
+  font-weight: 700;
+  color: #333;
+}
+
+/* TAGS */
+/* .tag-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-chip {
+  background: #17a2b8;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* STARS */
+/* .stars {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.star {
+  color: #bbb;
+  margin-right: 6px;
+}
+
+.star.filled {
+  color: gold;
+}
+
+/* IMAGE PREVIEW */
+/* .preview-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+} */ 
+#container-fluid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.recipe-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.recipe-card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.viewall-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #111;
+  margin-bottom: 2rem;
+}

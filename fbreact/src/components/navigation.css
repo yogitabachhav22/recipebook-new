@@ -1,0 +1,40 @@
+.nav-custom {
+  background: #ffffff !important;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2c3e50 !important;
+}
+
+.nav-item-custom {
+  color: #2c3e50 !important;
+  font-size: 1.1rem;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-item-custom:hover {
+  color: #0d6efd !important;
+  transform: translateY(-2px);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+button:focus,
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.brand-text {
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: #111;
+}

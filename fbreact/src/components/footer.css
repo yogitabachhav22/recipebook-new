@@ -1,0 +1,99 @@
+/* ===== Base Footer ===== */
+.footer-custom {
+  padding: 2.5rem 1rem;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  color: #555;
+}
+.footer-custom hr {
+  margin-bottom: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.footer-brand {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Text ===== */
+.footer-text {
+  margin-bottom: 0.5rem;
+}
+
+.footer-small {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* ===== Links ===== */
+.footer-custom a {
+  color: #666;
+  text-decoration: underline;
+}
+
+.footer-custom a:hover {
+  color: #000;
+}
+
+/* ===== Social Icons ===== */
+.footer-socials {
+  margin: 1rem 0;
+}
+
+.footer-socials a {
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  color: #666;
+}
+
+.footer-socials a:hover {
+  color: #000;
+}
+
+/* ===== Footer Bottom Links ===== */
+.footer-links {
+  margin-top: 0.75rem;
+}
+
+/* ===== DARK MODE ===== */
+@media (prefers-color-scheme: dark) {
+  .footer-custom {
+    background-color: #121212;
+    color: #bbb;
+  }
+
+  .footer-custom hr {
+    border-top: 1px solid #333;
+  }
+
+  .footer-custom a {
+    color: #aaa;
+  }
+
+  .footer-custom a:hover {
+    color: #fff;
+  }
+
+  .footer-socials a {
+    color: #aaa;
+  }
+
+  .footer-socials a:hover {
+    color: #fff;
+  }
+
+  .footer-small {
+    color: #999;
+  }
+}
+.footer-brand {
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+
+

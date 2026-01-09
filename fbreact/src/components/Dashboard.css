@@ -1,0 +1,19 @@
+.purple-btn {
+  background-color: #d8c7ff !important;
+  color: #4b2ca3 !important;
+  border: none !important;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.purple-btn:hover {
+  background-color: #c1a8ff !important;
+  color: #3a1f8a !important;
+  transform: translateY(-2px);
+}
