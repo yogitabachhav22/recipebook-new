@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 // Import routes
-const recipeRoutes = require("./routes/reciperoutes");
+const recipeRoutes = require("./routes/recipeRoutes");
 const authRoutes = require("./routes/auth"); 
 
 // Create express app  ✅ MUST COME FIRST
