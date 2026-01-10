@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Recipe = require("../models/Recipe");
+const Recipe = require("../models/recipe_temp");
 const auth = require("../middleware/user");
 
 // PUBLIC – get all recipes
