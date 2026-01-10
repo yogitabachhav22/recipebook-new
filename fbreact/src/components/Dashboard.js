@@ -2,8 +2,8 @@
 import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../context/AuthContext"; 
-import "./Dashboard.css";
+import { AuthContext } from "../context/authcontext"; 
+import "./dashboard.css";
 
 
 
