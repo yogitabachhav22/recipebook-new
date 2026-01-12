@@ -25,7 +25,7 @@ function Updatereceipe() {
   // 🔹 Fetch recipe
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/recipes/${id}`)
+      .get(`https://recipebook-new.onrender.com/recipes/${id}`)
       .then((res) => {
         setNewRecipe(res.data);
         setTags(res.data.tags || []);
@@ -49,7 +49,7 @@ function Updatereceipe() {
 
     axios
       .put(
-        `http://localhost:5000/recipes/${id}`,
+        `https://recipebook-new.onrender.com/recipes/${id}`,
         updatedRecipe,
         {
           headers: {
@@ -68,7 +68,7 @@ function Updatereceipe() {
   const deleteRecipe = () => {
     axios
       .delete(
-        `http://localhost:5000/recipes/${id}`,
+        `https://recipebook-new.onrender.com/recipes/${id}`,
         {
           headers: {
             "x-auth-token": token,

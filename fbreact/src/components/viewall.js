@@ -13,13 +13,15 @@ function Viewall() {
   const [receipes, setRecepies] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/recipes")
+    // axios.get("http://localhost:5000/recipes")
+    axios.get("https://recipebook-new.onrender.com/recipes")
+    
       .then(res => setRecepies(res.data))
       .catch(err => console.log(err));
   }, []);
 
   const addnewdata = () => {
-    axios.post("http://localhost:5000/recipes", {
+    axios.post("https://recipebook-new.onrender.com/recipes", {
       name: "Dummy Recipe",
       image: "https://via.placeholder.com/300",
       tags: ["Sample"],
