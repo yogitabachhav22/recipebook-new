@@ -7,7 +7,7 @@ import Receipedetails from './components/receipedetails';
 import Updatereceipe from './components/updatereceipe';
 
 
-import Signup from './components/signup';
+import Signup from './components/Signup';
 import Login from './components/login';
 import Dashboard from './components/dashboard';
 
