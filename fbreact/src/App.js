@@ -8,7 +8,7 @@ import Updatereceipe from './components/updatereceipe';
 
 
 import Signup from './components/Signup';
-import Login from './components/login';
+import Login from './components/Login';
 import Dashboard from './components/dashboard';
 
 import PrivateRoute from './utils/PrivateRoute';
