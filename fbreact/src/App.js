@@ -9,10 +9,10 @@ import Updatereceipe from './components/updatereceipe';
 
 import Signup from './components/Signup';
 import Login from './components/Login';
-import Dashboard from './components/dashboard';
+import Dashboard from './components/Dashboard';
 
 import PrivateRoute from './utils/PrivateRoute';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
