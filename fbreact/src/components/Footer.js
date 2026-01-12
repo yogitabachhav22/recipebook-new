@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { FaInstagram, FaPinterest } from "react-icons/fa";
-import "./Footer.css";
+import "./footer.css";
 
 function Footer() {
   return (
