@@ -29,19 +29,23 @@ router.get("/:id", async (req, res) => {
 //     res.status(500).json({ msg: err.message });
 //   }
 // });
+
 router.post("/", auth, async (req, res) => {
   try {
     const recipe = new Recipe({
       ...req.body,
-      user: req.user   // ✅ FIX
+      user: req.user.id   // FIXED
     });
 
     await recipe.save();
     res.status(201).json(recipe);
   } catch (err) {
+    console.error("Error creating recipe:", err);
     res.status(500).json({ msg: err.message });
   }
 });
+
+
 
 
 // UPDATE – owner only
@@ -101,6 +105,7 @@ router.put("/:id", auth, async (req, res) => {
 
     res.json(updated);
   } catch (err) {
+    console.error("Error creating recipe:", err);
     res.status(500).json({ msg: err.message });
   }
 });
