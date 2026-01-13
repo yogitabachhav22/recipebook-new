@@ -25,7 +25,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        "https://recipebook-new.onrender.com/auth/signup",
+        "https://recipebook-backend-kj8t.onrender.com/auth/signup",
         formData
       );
 

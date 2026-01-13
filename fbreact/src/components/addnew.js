@@ -65,7 +65,7 @@ function Addnew() {
     }
 
     const res = await axios.post(
-      "http://localhost:5000/recipes",
+      "https://recipebook-backend-kj8t.onrender.com/recipes",
       newReceipe,
       {
         headers: {

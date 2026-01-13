@@ -18,7 +18,7 @@ function Dashboard() {
 
       if (!token) return;
 
-      const res = await axios.get("http://localhost:5000/auth/me", {
+      const res = await axios.get("https://recipebook-backend-kj8t.onrender.com/auth/me", {
         headers: { "x-auth-token": token },
       });
 
