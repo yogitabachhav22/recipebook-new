@@ -92,7 +92,7 @@ router.put("/:id", auth, async (req, res) => {
       return res.status(404).json({ msg: "Recipe not found" });
 
     // ✅ FIXED comparison
-    if (recipe.user.toString() !== req.user)
+    if (recipe.user.toString() !== req.user.id)
       return res.status(401).json({ msg: "Not authorized" });
 
     const { _id, __v, user, ...safeData } = req.body;
@@ -137,7 +137,7 @@ router.delete("/:id", auth, async (req, res) => {
       return res.status(404).json({ msg: "Recipe not found" });
 
     // ✅ FIXED comparison
-    if (recipe.user.toString() !== req.user)
+    if (recipe.user.toString() !== req.user.id)
       return res.status(401).json({ msg: "Not authorized" });
 
     await recipe.deleteOne();
