@@ -3,6 +3,14 @@ const router = express.Router();
 const Recipe = require("../models/recipe");
 const auth = require("../middleware/auth");
 
+
+// Test route
+router.get("/", (req, res) => {
+  res.json({ message: "Recipes working" });
+});
+
+module.exports = router;
+
 // PUBLIC – get all recipes
 router.get("/", async (req, res) => {
   const recipes = await Recipe.find().populate("user", "name");
