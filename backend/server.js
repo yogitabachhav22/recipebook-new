@@ -44,6 +44,11 @@ app.use(express.json());
 app.use("/auth", authRoutes);
 app.use("/recipes", recipeRoutes);
 
+
+app.get("/test", (req, res) => {
+  res.send("Backend working");
+});
+
 // Health check route
 app.get("/", (req, res) => {
 res.send("RecipeBook Backend is running");
