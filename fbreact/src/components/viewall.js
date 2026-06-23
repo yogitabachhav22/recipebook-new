@@ -13,12 +13,22 @@ function Viewall() {
   const [receipes, setRecepies] = useState([]);
 
   useEffect(() => {
+  axios
+    .get("https://recipebook-new-1.onrender.com/recipes")
+    .then((res) => {
+      console.log("API Response:", res.data);
+      setRecepies(res.data);
+    })
+    .catch((err) => console.log(err));
+}, []);
+
+  // useEffect(() => {
    
-    axios.get("https://recipebook-new-1.onrender.com/recipes")
+  //   axios.get("https://recipebook-new-1.onrender.com/recipes")
     
-      .then(res => setRecepies(res.data))
-      .catch(err => console.log(err));
-  }, []);
+  //     .then(res => setRecepies(res.data))
+  //     .catch(err => console.log(err));
+  // }, []);
 
   const addnewdata = () => {
     axios.post("https://recipebook-new-1.onrender.com/recipes", {
@@ -41,7 +51,8 @@ function Viewall() {
       </h1>
 
       <div id="container-fluid">
-        {receipes?.map(receipe => (
+       {Array.isArray(receipes) &&
+  receipes.map(receipe =>  (
           <Card className="recipe-card" key={receipe._id}>
             <Card.Img
               variant="top"
