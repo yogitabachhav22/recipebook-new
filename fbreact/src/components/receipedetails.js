@@ -19,12 +19,6 @@ function Receipedetails() {
 }, [id]);
 
 
-  // useEffect(() => {
-  //   axios.get(`http://localhost:5000/recipes/${id}`)
-  //     .then(res => {
-  //       setReceipe(res.data);
-  //     });
-  // }, [id]);
 
   if (!receipe) return <h2>Loading...</h2>;
 

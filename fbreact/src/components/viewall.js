@@ -13,7 +13,7 @@ function Viewall() {
   const [receipes, setRecepies] = useState([]);
 
   useEffect(() => {
-    // axios.get("http://localhost:5000/recipes")
+   
     axios.get("https://recipebook-new-1.onrender.com/recipes")
     
       .then(res => setRecepies(res.data))
