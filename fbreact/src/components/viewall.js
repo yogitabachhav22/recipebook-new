@@ -14,7 +14,7 @@ function Viewall() {
 
   useEffect(() => {
   axios
-    .get("https://recipebook-new-1.onrender.com/recipes")
+    .get("https://recipebook-backend-kj8t.onrender.com/recipes")
     .then((res) => {
       console.log("API Response:", res.data);
       setRecepies(res.data);
@@ -31,7 +31,7 @@ function Viewall() {
   // }, []);
 
   const addnewdata = () => {
-    axios.post("https://recipebook-new-1.onrender.com/recipes", {
+    axios.post("https://recipebook-backend-kj8t.onrender.com/recipes", {
       name: "Dummy Recipe",
       image: "https://via.placeholder.com/300",
       tags: ["Sample"],
