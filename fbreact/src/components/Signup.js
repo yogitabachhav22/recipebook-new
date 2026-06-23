@@ -25,9 +25,11 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        "https://recipebook-backend-kj8t.onrender.com/auth/signup",
+        "https://recipebook-new-1.onrender.com/auth/signup",
+       
         formData
       );
+    
 
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
