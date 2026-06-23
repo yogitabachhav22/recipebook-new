@@ -45,7 +45,7 @@ function Updatereceipe() {
 
     try {
       const res = await axios.post(
-        "https://api.cloudinary.com/v1_1/dsnwcqvfn/image/upload",
+        "https://api.cloudinary.com/v1_1/dsncwqfvn/image/upload",
         data
       );
 
