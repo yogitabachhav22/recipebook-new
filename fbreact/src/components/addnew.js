@@ -103,6 +103,33 @@ function Addnew() {
   }
 };
 
+//new code start here
+const handleImageUpload = async (e) => {
+  const file = e.target.files[0];
+  const data = new FormData();
+
+  data.append("file", file);
+  data.append("upload_preset", "youchef_preset"); // your preset
+
+  try {
+    const res = await axios.post(
+      "https://api.cloudinary.com/v1_1/dsnwcqvfn/image/upload",
+      data
+    );
+
+    setNewReceipe((prev) => ({
+      ...prev,
+      image: res.data.secure_url, // ⭐ Cloudinary URL saved here
+    }));
+  } catch (err) {
+    console.error("Image upload failed", err);
+    alert("Image upload failed");
+  }
+};
+
+
+// new code end here
+
   
 
 
@@ -238,27 +265,28 @@ function Addnew() {
           </Form.Group>
 
           {/* IMAGE URL */}
+
           <Form.Group as={Row} className="mb-4">
-            <Form.Label column sm="3">Image URL *</Form.Label>
-            <Col sm="9">
-              <Form.Control
-                type="text"
-                placeholder="Paste image URL (e.g., https://i.imgur.com/abc.jpg)"
-                onChange={(e) =>
-                  setNewReceipe({ ...newReceipe, image: e.target.value })
-                }
-              />
+  <Form.Label column sm="3">Upload Image *</Form.Label>
+  <Col sm="9">
+    <Form.Control
+      type="file"
+      accept="image/*"
+      onChange={handleImageUpload}
+    />
 
-              {newReceipe.image && (
-                <img
-                  src={newReceipe.image}
-                  alt="preview"
-                  className="preview-img mt-3"
-                />
-              )}
-            </Col>
-          </Form.Group>
+    {newReceipe.image && (
+      <img
+        src={newReceipe.image}
+        alt="preview"
+        className="preview-img mt-3"
+        style={{ width: "200px", borderRadius: "10px" }}
+      />
+    )}
+  </Col>
+</Form.Group>
 
+         
           {/* BUTTON */}
           <div className="text-center">
             <Button type="submit" className="w-50 btn-lg" variant="primary">

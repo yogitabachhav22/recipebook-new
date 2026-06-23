@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from "react";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
@@ -22,7 +20,7 @@ function Updatereceipe() {
   const [rating, setRating] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
-  // 🔹 Fetch recipe
+  // ⭐ Fetch recipe
   useEffect(() => {
     axios
       .get(`https://recipebook-backend-kj8t.onrender.com/recipes/${id}`)
@@ -37,7 +35,31 @@ function Updatereceipe() {
       });
   }, [id]);
 
-  // 🔹 Update recipe
+  // ⭐ Cloudinary Image Upload
+  const handleImageUpload = async (e) => {
+    const file = e.target.files[0];
+    const data = new FormData();
+
+    data.append("file", file);
+    data.append("upload_preset", "youchef_preset");
+
+    try {
+      const res = await axios.post(
+        "https://api.cloudinary.com/v1_1/dsnwcqvfn/image/upload",
+        data
+      );
+
+      setNewRecipe((prev) => ({
+        ...prev,
+        image: res.data.secure_url,
+      }));
+    } catch (err) {
+      console.error("Image upload failed", err);
+      alert("Image upload failed");
+    }
+  };
+
+  // ⭐ Update recipe
   const updatedata = (e) => {
     e.preventDefault();
 
@@ -64,7 +86,7 @@ function Updatereceipe() {
       });
   };
 
-  // 🔹 Delete recipe
+  // ⭐ Delete recipe
   const deleteRecipe = () => {
     axios
       .delete(
@@ -82,7 +104,7 @@ function Updatereceipe() {
       });
   };
 
-  // 🔹 Add tag
+  // ⭐ Add tag
   const addTag = () => {
     if (tagInput.trim()) {
       setTags([...tags, tagInput.trim()]);
@@ -90,7 +112,7 @@ function Updatereceipe() {
     }
   };
 
-  // 🔹 Remove tag
+  // ⭐ Remove tag
   const removeTag = (tag) => {
     setTags(tags.filter((t) => t !== tag));
   };
@@ -100,6 +122,7 @@ function Updatereceipe() {
       <h1 className="text-center mt-4">Update Recipe</h1>
 
       <Form className="p-4" onSubmit={updatedata}>
+        
         {/* NAME */}
         <Form.Group as={Row} className="mb-3">
           <Form.Label column sm="2">Name</Form.Label>
@@ -151,7 +174,7 @@ function Updatereceipe() {
         <Form.Group as={Row} className="mb-3">
           <Form.Label column sm="2">Rating</Form.Label>
           <Col sm="10">
-            {[1,2,3,4,5].map((star) => (
+            {[1, 2, 3, 4, 5].map((star) => (
               <FaStar
                 key={star}
                 size={30}
@@ -196,6 +219,26 @@ function Updatereceipe() {
                 })
               }
             />
+          </Col>
+        </Form.Group>
+
+        {/* IMAGE UPLOAD */}
+        <Form.Group as={Row} className="mb-3">
+          <Form.Label column sm="2">Image</Form.Label>
+          <Col sm="10">
+            <Form.Control
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+            />
+
+            {newRecipe.image && (
+              <img
+                src={newRecipe.image}
+                alt="preview"
+                style={{ width: "200px", marginTop: "10px", borderRadius: "10px" }}
+              />
+            )}
           </Col>
         </Form.Group>
 
