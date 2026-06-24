@@ -7,10 +7,19 @@ const auth = require("../middleware/auth");
 
 
 // PUBLIC – get all recipes
-router.get("/", async (req, res) => {
-  res.json({
-    test: "NEW_DEPLOYMENT_WORKING"
-  });
+
+
+
+
+
+ router.get("/", async (req, res) => {
+  try {
+    const recipes = await Recipe.find().populate("user", "name");
+    res.json(recipes);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: err.message });
+  }
 });
 
 /*// router.get("/", async (req, res) => {
