@@ -17,7 +17,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "https://recipebook-backend-kj8t.onrender.com/auth/login",
+      "https://recipebook-backend-kj8t.onrender.com/auth/login?v=2",
         formData
       );
       localStorage.setItem("token", res.data.token);

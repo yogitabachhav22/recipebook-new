@@ -6,7 +6,7 @@ const MyRecipes = () => {
 
   useEffect(() => {
     axios
-      .get("https://recipebook-new-1.onrender.com/recipes/my", {
+      .get("https://recipebook-backend-kj8t.onrender.com/recipes/my?v=2", {
         headers: { "x-auth-token": localStorage.getItem("token") }
       })
       .then(res => setRecipes(res.data));

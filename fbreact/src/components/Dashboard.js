@@ -18,7 +18,7 @@ function Dashboard() {
 
       if (!token) return;
 
-      const res = await axios.get("https://recipebook-backend-kj8t.onrender.com/auth/me", {
+      const res = await axios.get("https://recipebook-backend-kj8t.onrender.com/auth/me?v=2", {
         headers: { "x-auth-token": token },
       });
 

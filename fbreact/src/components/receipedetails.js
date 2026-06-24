@@ -13,7 +13,7 @@ function Receipedetails() {
   const { id } = useParams();
 
   useEffect(() => {
-  axios.get(`https://recipebook-backend-kj8t.onrender.com/recipes/${id}`)
+  axios.get(`https://recipebook-backend-kj8t.onrender.com/recipes/${id}?v=2`)
     .then(res => setReceipe(res.data))
     .catch(err => console.error("Error:", err));
 }, [id]);
