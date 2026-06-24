@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
 
     const fetchUser = async () => {
       try {
-        const res = await axios.get("https://recipebook-backend-kj8t.onrender.com/auth/me", {
+        const res = await axios.get("https://recipebook-backend-kj8t.onrender.com/auth/me?v=2", {
           headers: { "x-auth-token": token },
         });
         setUser(res.data);
@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem("token", token);
 
     try {
-      const res = await axios.get("https://recipebook-backend-kj8t.onrender.com/auth/me", {
+      const res = await axios.get("https://recipebook-backend-kj8t.onrender.com/auth/me?v=2", {
         headers: { "x-auth-token": token },
       });
       setUser(res.data); // ✅ THIS updates navbar instantly
