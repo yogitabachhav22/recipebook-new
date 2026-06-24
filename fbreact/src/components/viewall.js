@@ -14,7 +14,7 @@ function Viewall() {
 
   useEffect(() => {
   axios
-    .get("https://recipebook-backend-kj8t.onrender.com/recipes")
+    .get("https://recipebook-backend-kj8t.onrender.com/recipes?v=2")
     .then((res) => {
       console.log("API Response:", res.data);
       setRecepies(res.data);
@@ -22,16 +22,10 @@ function Viewall() {
     .catch((err) => console.log(err));
 }, []);
 
-  // useEffect(() => {
-   
-  //   axios.get("https://recipebook-new-1.onrender.com/recipes")
-    
-  //     .then(res => setRecepies(res.data))
-  //     .catch(err => console.log(err));
-  // }, []);
+ 
 
   const addnewdata = () => {
-    axios.post("https://recipebook-backend-kj8t.onrender.com/recipes", {
+    axios.post("https://recipebook-backend-kj8t.onrender.com/recipes?v=2", {
       name: "Dummy Recipe",
       image: "https://via.placeholder.com/300",
       tags: ["Sample"],
